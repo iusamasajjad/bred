@@ -1,0 +1,166 @@
+body {
+    background: #000000;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* ======= common-classes ======= */
+.text-red {
+    color: #BD0000;
+}
+
+.text-gray {
+    color: #C7C1C1;
+}
+
+.bg-red {
+    background: #BD0000;
+}
+
+.bg-gray {
+    background: #141414;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.font-large {
+    font-size: 52px;
+}
+
+/* ============ hero-section ========= */
+.bg-bredCard {
+    background-image: url('../images/hero-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+/* ================== bred-carousel =============== */
+.slider-main {
+    overflow: hidden;
+
+    .slider {
+        animation: slidein 30s linear infinite;
+        white-space: nowrap;
+
+        .logos {
+            width: 100%;
+            display: inline-block;
+            margin: 0px 0;
+
+            .fab {
+                width: calc(100% / 5);
+                animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+            }
+        }
+    }
+}
+
+@keyframes slidein {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* =============== hamburger ================= */
+
+.topnav {
+    overflow: hidden;
+    z-index: 999;
+}
+
+.topnav .fa {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    display: flex;
+}
+
+.topnav .nav-bar {
+    background-color: #232122;
+    color: white;
+    display: none;
+    padding: 20px 0px;
+
+}
+
+.main-ham {
+    left: 0;
+    right: 0;
+    top: 70px;
+}
+
+.topnav .nav-bar a {
+    text-decoration: none;
+    color: white;
+
+}
+/* ================= from-section ============= */
+
+.bg-form {
+    background-image: url('../images/layer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ================== media-quries =============== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .bg-blur {
+        background: #141414;
+        border-radius: 20px;
+    }
+
+    .font-large {
+        font-size: 26px;
+    }
+
+    .blur-iphone {
+        position: relative;
+        bottom: 60px;
+    }
+    .section-break{
+        margin-top: 100px !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .bg-blur {
+        background: #141414;
+        border-radius: 20px;
+    }
+
+    .font-large {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .bg-blur {
+        background: #141414;
+        border-radius: 20px;
+    }
+
+    .font-large {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {}
