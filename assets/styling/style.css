@@ -95,6 +95,7 @@ body {
     left: 0;
     right: 0;
     top: 70px;
+    z-index: 999 !important;
 }
 
 .topnav .nav-bar a {
