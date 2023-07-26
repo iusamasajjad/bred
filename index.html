@@ -19,8 +19,8 @@
     <div>
         <!-- ================== navbar =================== -->
         <nav class="navbar d-none d-lg-flex my-4 container mx-auto">
-            <div>
-                <img src="./assets/images/logo.png" alt="bred-logo">
+            <div class="col-1">
+                <img class="col-12" src="./assets/images/logo.png" alt="bred-logo">
             </div>
             <ul class="list-inline d-flex align-items-center mb-0">
                 <li class="me-4"><a class="text-decoration-none text-red" href="#">Home</a></li>
@@ -28,15 +28,17 @@
                 <li class="me-4"><a class="text-decoration-none text-gray" href="#">Get Card</a></li>
             </ul>
             <div>
-                <button class="bg-red px-3 py-2 rounded-pill border-0 text-white">Contact Us</button>
+                <a href="mailto:aselim@berkeley.edu">
+                    <button type="submit" class="bg-red px-3 py-2 rounded-pill border-0 text-white">Contact Us</button>
+                </a>
             </div>
         </nav>
 
         <!-- ================ hamburger-section ============= -->
         <div class="topnav ml-3 d-block d-md-none">
             <div class="d-flex justify-content-between py-4 align-items-center px-4">
-                <div>
-                    <img src="./assets/images/logo.png" alt="logo">
+                <div class="col-3">
+                    <img class="col-12" src="./assets/images/logo.png" alt="bred-logo">
                 </div>
                 <div>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -55,15 +57,19 @@
         </div>
 
         <!-- ================== hero-section ================== -->
-        <div class="container mx-auto pt-4">
-            <div class="bg-bredCard d-flex justify-content-center align-items-center">
-                <img src="./assets/images/play.png" alt="hero-img">
+        <div class="container-fluid px-0 pt-2">
+            <div class=" d-flex justify-content-center align-items-center">
+                <video class="col-12" muted loop autoplay>
+                    <source src="./assets/videos/amirVideo.mp4" type="video/mp4">
+                    <source src="./assets/videos/amirVideo.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
         <div class="container max-auto d-flex justify-content-center text-center">
             <div>
                 <div class="d-flex justify-content-center">
-                    <img class="col-12 col-lg-7" src="./assets/images/bred-card.png" alt="bred=card">
+                    <img class="col-12 col-lg-7" src="./assets/images/cardBred.png" alt="bred=card">
                 </div>
                 <div>
                     <h2 class="text-white fs-1">Get Your Extraordinary Creditcard for Free</h2>
@@ -85,7 +91,7 @@
             </div>
             <div class="d-flex col-12 flex-column flex-lg-row justify-content-between align-items-center text-center">
                 <div class="d-flex col-lg-4 col-12 mt-3 bg-blur py-2 justify-content-center">
-                    <div>
+                    <div class="py-4">
                         <div>
                             <img class="col-7 col-lg-12" src="./assets/images/jogers.png" alt="jogers">
                         </div>
@@ -96,7 +102,7 @@
                     </div>
                 </div>
                 <div class="d-flex col-lg-4 col-12  mt-3 bg-blur py-2 justify-content-center">
-                    <div>
+                    <div class="py-4">
                         <div>
                             <img class="col-7 col-lg-12" src="./assets/images/t-shirt.png" alt="bred-t-shirt">
                         </div>
@@ -107,7 +113,7 @@
                     </div>
                 </div>
                 <div class="d-flex mt-3 col-lg-4 col-12  bg-blur py-2 justify-content-center">
-                    <div>
+                    <div class="py-4">
                         <div>
                             <img class="col-7 col-lg-12" src="./assets/images/passes.png" alt="passes">
                         </div>
@@ -121,26 +127,14 @@
             </div>
         </div>
 
-        <!-- ============= discover-the-bred-section ============== -->
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="slider-main rounded">
-                    <div class="slider">
-                        <div class="logos mx-5">
-                            <div class="d-flex justify-content-between align-items-center py-5 my-5">
-                                <div>
-                                    <img src="./assets/images/discovertheBread.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="logos mx-5">
-                            <div class="d-flex d-block d-lg-flex justify-content-between align-items-center py-5 my-5">
-                                <div>
-                                    <img src="./assets/images/discovertheBread.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- =================== slider =================== -->
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide me-5">
+                    <img src="./assets/images/discovertheBread.png" alt="">
+                </div>
+                <div class="slide d-none d-lg-block">
+                    <img src="./assets/images/discovertheBread.png" alt="">
                 </div>
             </div>
         </div>
@@ -151,24 +145,24 @@
 
             <div class="px-lg-4 bg-blur mx-lg-5 section-break mt-5 mt-lg-2">
                 <div class="d-flex flex-column-reverse flex-lg-row col-12 justify-content-between align-items-center">
-                    <div class="mt-5 col-12 col-lg-8 px-3">
+                    <div class="mt-lg-5 pb-5 col-12 col-lg-8 px-3">
                         <h2 class="text-white text-lg-start text-center font-large">Power at Your Fingertips</h2>
                         <p class="text-gray my-2 text-lg-start text-center fw-light fs-5">Effortlessly manage your
                             credit card balance, track
                             transactions, make
                             payments, and gain a comprehensive overview of all your card balances.</p>
                     </div>
-                    <div class="col-lg-4 col-10 d-flex justify-content-lg-end justify-content-center">
+                    <div class="col-lg-4 col-8 d-flex justify-content-lg-end justify-content-center">
                         <img class="col-12 blur-iphone" src="./assets/images/iPhone1.png" alt="passes">
                     </div>
                 </div>
             </div>
             <div class="px-lg-4 bg-blur mx-lg-5 section-break mt-5 mt-lg-2">
                 <div class="d-flex flex-column flex-lg-row col-12 justify-content-between align-items-center">
-                    <div class="col-lg-4 col-10 d-flex justify-content-lg-end justify-content-center">
+                    <div class="col-lg-4 col-8  d-flex justify-content-lg-end justify-content-center">
                         <img class="col-12 blur-iphone" src="./assets/images/iPhone1.png" alt="passes">
                     </div>
-                    <div class="mt-5 col-12 col-lg-8 ps-lg-5 px-3">
+                    <div class="mt-lg-5 pb-5 col-12 col-lg-8 ps-lg-5 px-3">
                         <h2 class="text-white text-lg-start text-center font-large">Master Your Money</h2>
                         <p class="text-gray my-2 text-lg-start text-center fw-light fs-5">Reign over your finances with
                             irresistibly seductive
@@ -178,13 +172,13 @@
             </div>
             <div class="px-lg-4 bg-blur mx-lg-5 section-break mt-5 mt-lg-2">
                 <div class="d-flex flex-column-reverse flex-lg-row col-12 justify-content-between align-items-center">
-                    <div class="mt-5 col-lg-8 col-12 px-3">
+                    <div class="mt-lg-5 pb-5 col-lg-8 col-12 px-3">
                         <h2 class="text-white text-lg-start text-center font-large">Unlock Elite Rewards</h2>
                         <p class="text-gray my-2 text-lg-start text-center fw-light fs-5">Rewards Access a world of
                             unrivaled sneaker and
                             streetwear rewards, curated exclusively for our esteemed clientele.</p>
                     </div>
-                    <div class="col-lg-4 col-10 d-flex justify-content-lg-end justify-content-center">
+                    <div class="col-lg-4 col-8  d-flex justify-content-lg-end justify-content-center">
                         <img class="col-12 blur-iphone" src="./assets/images/iPhone1.png" alt="passes">
                     </div>
                 </div>
@@ -204,7 +198,7 @@
                             testament to your discerning taste.</p>
                     </div>
                     <div>
-                        <img class="col-12 col-lg-7" src="./assets/images/bred-card.png" alt="bred=card">
+                        <img class="col-12 col-lg-7" src="./assets/images/bredCard-2.png" alt="bred=card">
                     </div>
                 </div>
             </div>
@@ -221,18 +215,53 @@
                             culture </h2>
                     </div>
                     <div class="mt-4">
-                        <form action="submit">
-                            <p class="text-white mb-2 fs-5">Full Name</p>
-                            <input class="bg-gray col-12 border-0 py-3 outline-none rounded px-4 text-gray" type="text"
-                                placeholder="Enter your first name">
-                            <p class="text-white mb-2 mt-4 fs-5">Email Address</p>
-                            <input class="bg-gray col-12 border-0 py-3 outline-none rounded px-4 text-gray" type="text"
-                                placeholder="Enter your email">
-                            <div class="mt-4 pb-5 d-flex justify-content-end">
-                                <button class="bg-red px-3 py-2 rounded-pill border-0 text-white">Join the
-                                    Waitlist</button>
+                        <div id="mc_embed_shell">
+                            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet"
+                                type="text/css">
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="https://carrd.us12.list-manage.com/subscribe/post?u=c9aa77ba996f3204546fb28bc&amp;id=82c741bd08&amp;f_id=007243e0f0"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                    class="validate" target="_blank">
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="mc-field-group text-white"><label for="mce-EMAIL">Email Address
+                                                <span class="asterisk ">*</span></label><input type="email" name="EMAIL"
+                                                placeholder="Enter your Email"
+                                                class="required email bg-gray col-12 border-0 py-3 outline-none rounded px-4 text-gray"
+                                                id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT"
+                                                class="helper_text bg-transparent"></span></div>
+                                        <div class="mc-field-group text-white"><label for="mce-FNAME">First Name
+                                            </label><input placeholder="Enter your first name" type="text" name="FNAME"
+                                                class=" text bg-gray col-12 border-0 py-3 outline-none rounded px-4 text-gray"
+                                                id="mce-FNAME" value=""></div>
+                                        <div id="mce-responses" class="clear foot">
+                                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                                            <div class="response" id="mce-success-response" style="display: none;">
+                                            </div>
+                                        </div>
+                                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                            /* real people should not fill this in and expect good things - do not
+                                            remove this or risk form
+                                            bot signups */
+                                            <input type="text" name="b_c9aa77ba996f3204546fb28bc_82c741bd08"
+                                                tabindex="-1" value="">
+                                        </div>
+                                        <div class="optionalParent">
+                                            <div class="clear foot pb-5 d-flex justify-content-end ">
+                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                    class="bg-red px-3 py-2 rounded-pill border-0 text-white"
+                                                    value="Join the Waitlist">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                            <script type="text/javascript"
+                                src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                            <script
+                                type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = EMAIL; ftypes[0] = merge; fnames[1] = FNAME; ftypes[1] = merge; fnames[2] = LNAME; ftypes[2] = merge; fnames[3] = ADDRESS; ftypes[3] = merge; fnames[4] = PHONE; ftypes[4] = merge; fnames[5] = BIRTHDAY; ftypes[5] = merge; false }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -242,8 +271,8 @@
         <footer class="container mx-auto ps-4 ps-lg-0 bg-blur">
             <div
                 class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center py-4">
-                <div>
-                    <img src="./assets/images/logo.png" alt="bred-logo">
+                <div class="col-2">
+                    <img class="col-10" src="./assets/images/logo.png" alt="bred-logo">
                 </div>
                 <div class="pt-4">
                     <div class="d-flex">
