@@ -212,6 +212,13 @@ body {
     .font-large {
         font-size: 26px;
     }
+    .blur-iphone {
+        position: relative;
+        bottom: 60px;
+    }
+    .section-break{
+        margin-top: 100px !important;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {}
