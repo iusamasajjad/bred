@@ -15,7 +15,9 @@ body {
 .bg-red {
     background: #BD0000;
 }
-
+.font-large{
+    font-size: 54px;
+}
 .bg-gray {
     background: #141414;
 }
@@ -23,11 +25,22 @@ body {
 .outline-none {
     outline: none;
 }
-
+.height-lg{
+    height: 450px;
+}
 .font-large {
     font-size: 52px;
 }
-
+.bg-lg-blur {
+    background: #141414;
+    border-radius: 20px;
+}
+.bg-iphoneFrame{
+    background-image: url('../images/frame.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* ================== bred-carousel =============== */
 .slider-main {
