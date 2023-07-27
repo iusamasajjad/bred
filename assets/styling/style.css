@@ -69,40 +69,7 @@ body {
         opacity: 1;
     }
 }
-/* =============== hamburger ================= */
 
-.topnav {
-    overflow: hidden;
-    z-index: 999;
-}
-
-.topnav .fa {
-    color: white;
-    text-decoration: none;
-    font-size: 26px;
-    display: flex;
-}
-
-.topnav .nav-bar {
-    background-color: #232122;
-    color: white;
-    display: none;
-    padding: 20px 0px;
-
-}
-
-.main-ham {
-    left: 0;
-    right: 0;
-    top: 70px;
-    z-index: 999 !important;
-}
-
-.topnav .nav-bar a {
-    text-decoration: none;
-    color: white;
-
-}
 /* ================= from-section ============= */
 
 .bg-form {
