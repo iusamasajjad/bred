@@ -2,6 +2,9 @@ body {
     background: #000000;
     font-family: 'DM Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 /* ======= common-classes ======= */
 .text-red {
@@ -22,11 +25,14 @@ body {
     background: #141414;
 }
 
+.section-space{
+    margin: 50px 0px;
+}
 .outline-none {
     outline: none;
 }
 .height-lg{
-    height: 450px;
+    height: 470px;
 }
 .font-large {
     font-size: 52px;
@@ -93,53 +99,6 @@ body {
 }
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
     background: transparent !important;
-}
-
-/* ================== slider ================ */
-.slider{
-    overflow: hidden;
-}
-.slider::before, .slider::after {
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-}
-
-.slider::after {
-    right: 0;
-    left: 0;
-}
-
-.slider::before {
-    left: 0;
-    right: 0;
-}
-
-.slider .slide-track {
-    animation: scroll 10s linear infinite;
-    display: flex;
-    width: calc(100% * 1);
-
-}
-
-.slider .slide-track:hover {
-    animation-play-state: paused;
-}
-
-.slider .slide {
-    width: 120%;
-}
-
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-110% * 1));
-    }
 }
 
 /* ================== media-quries =============== */
