@@ -40,14 +40,8 @@ html {
 .bg-lg-blur {
     background: #141414;
     border-radius: 20px;
+    box-shadow: rgb(25, 26, 27) 6px 5px 18px 13px;
 }
-.bg-iphoneFrame{
-    background-image: url('../images/frame.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 /* ================== bred-carousel =============== */
 .slider-main {
     overflow: hidden;
@@ -120,6 +114,7 @@ html {
     transform: translateY(0);
     opacity: 1;
   }
+ 
 
 /* ================== media-quries =============== */
 
