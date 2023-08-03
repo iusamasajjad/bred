@@ -143,6 +143,10 @@ html {
     rgba(240, 46, 170, 0.1) 20px 20px, 
     rgba(240, 46, 170, 0.05) 25px 25px;
     }
+    .footer-bg{
+        background: #141414;
+        border-radius: 20px;
+    }
 
     .font-large {
         font-size: 26px;
@@ -194,6 +198,10 @@ html {
     rgba(240, 46, 170, 0.1) 20px 20px, 
     rgba(240, 46, 170, 0.05) 25px 25px;
     }
+    .footer-bg{
+        background: #141414;
+        border-radius: 20px;
+    }
 
     .font-large {
         font-size: 26px;
@@ -222,6 +230,10 @@ html {
     rgba(240, 46, 170, 0.2) 15px 15px, 
     rgba(240, 46, 170, 0.1) 20px 20px, 
     rgba(240, 46, 170, 0.05) 25px 25px;
+    }
+    .footer-bg{
+        background: #141414;
+        border-radius: 20px;
     }
 
     .font-large {
