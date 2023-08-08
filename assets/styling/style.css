@@ -13,7 +13,7 @@ html {
 }
 
 .text-gray {
-    color: #C7C1C1;
+    color: #C7C1C1 !important;
 }
 
 .bg-red {
@@ -37,7 +37,7 @@ html {
 }
 
 .height-lg {
-    height: 550px;
+    max-height: 550px;
 }
 
 .font-large {
@@ -103,10 +103,10 @@ html {
 	z-index: 100;
 	text-decoration: none;
 	text-shadow: 0;
-  width: 13px;
-  height: 13px;
-  border-bottom: 2px solid #ff003d;
-  border-right: 2px solid #ff003d;
+  width: 25px;
+  height: 25px;
+  border-bottom: 4px solid #ff003d;
+  border-right: 4px solid #ff003d;
   z-index: 9;
   left: 50%;
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
@@ -293,4 +293,8 @@ html {
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .height-lg {
+        height: unset;
+    }
+}
